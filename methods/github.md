@@ -36,15 +36,17 @@ Add SSH Key,title随便填，粘贴在你电脑上生成的key。
 3. git commit -m '提交的信息' //提交到本地仓库
 4. git push/git push origin master //提交到你想用的分支 
 5. git remote add origin <server> //将分支添加到服务器
-6. git checkout -b gaoshuai //创建分支
-7. git checkout master/gaoshuai //切换分支
-8. git branch -d gaoshuai //删除新建分支
-9. git push //更新你的本地仓库至最新版本
-10. git merge <branch> //合并分支，可能会有冲突，手动解决完，在合并
-11. git diff <master> <gaoshuai> //预览差异
-12. git tag 1.0.0 1b2e1d63ff //为软件发布创建标签是推荐的。这个概念早已存在
+6. git branch <分支名字>/git checkout -b gaoshuai //创建分支
+7. git push --set-upstream origin <分支名字> //分支推送到远程仓库
+8. git checkout master/gaoshuai //切换分支
+9. git branch -d gaoshuai //删除本地分支
+10. git push origin :<分支名字> //远程删除你的分支
+11. git pull //更新你的本地仓库至最新版本
+12. git merge <branch> //合并分支，可能会有冲突，手动解决完，在合并
+13. git diff <master> <gaoshuai> //预览差异
+14. git tag 1.0.0 1b2e1d63ff //为软件发布创建标签是推荐的。这个概念早已存在
     在 SVN 中也有。你可以执行如下命令创建一个叫做 1.0.0 的标签.
-13. git log //打印提交日志,你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。
+15. git log //打印提交日志,你也可以使用少一点的提交 ID 前几位，只要它的指向具有唯一性。
 
 #### 替换本地改动
 
@@ -77,6 +79,6 @@ Add SSH Key,title随便填，粘贴在你电脑上生成的key。
 
 >git add -i
 
-####相关连接
+#### 相关连接
 * Github 简明指南：http://rogerdudler.github.io/git-guide/index.zh.html
 * 如何高效利用GitHub:http://www.yangzhiping.com/tech/github.html
