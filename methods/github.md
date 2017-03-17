@@ -82,3 +82,4 @@ Add SSH Key,title随便填，粘贴在你电脑上生成的key。
 #### 相关连接
 * Github 简明指南：http://rogerdudler.github.io/git-guide/index.zh.html
 * 如何高效利用GitHub:http://www.yangzhiping.com/tech/github.html
+* 廖雪峰git教程: http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000
