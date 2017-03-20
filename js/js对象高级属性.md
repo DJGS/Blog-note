@@ -3,10 +3,10 @@
 #### 1.数据属性:
 数据属性包含一个数据值的位置,可在该位置读取或写入值,该属性有4个特性:
 
-* [configurable]:表示能否用delete操作符删除而重新定义.
-* [Enumberable]:表示能否用for-in循环返回其属性.
-* [Writable]:表示能否修改属性的值。
-* [Value]:包含属性的数据值。
+* [[configurable]]:表示能否用delete操作符删除而重新定义.
+* [[Enumberable]]:表示能否用for-in循环返回其属性.
+* [[Writable]]:表示能否修改属性的值。
+* [[Value]]:包含属性的数据值。
 
 要修改对象属性的默认特征，可调用Object.defineProperty()方法,他接收三个参数:属性所在的对象，属性和一个描述符对象。
 
@@ -27,10 +27,10 @@
 它主要包含一对getter和setter函数,在读取访问器属性时,会调用getter返回有效值;
 写入访问器属性时,调用setter,写入新值。
 
-* [Configurable]:是否可以通过delete删除重新定义属性。
-* [Numberable]: 是否可以通过for-in循环查找重新定义属性。
-* [Get]:读取属性时调用,默认undefined。
-* [Set]:写入时调用，默认undefined。
+* [[Configurable]]:是否可以通过delete删除重新定义属性。
+* [[Numberable]]: 是否可以通过for-in循环查找重新定义属性。
+* [[Get]]:读取属性时调用,默认undefined。
+* [[Set]]:写入时调用，默认undefined。
 
 访问属性不能直接定义，必须使用definedProperty()来定义,如下:
 
