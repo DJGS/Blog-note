@@ -8,4 +8,4 @@
 <img style="width: 500px; height: 300px; margin: 0 auto; display: block;" src="http://img.blog.csdn.net/20150829112739622?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQv/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
 
 ### 3.update
-从SVN检出代码后，本地的代码为SVN服务器上代码的副本，并不会随着其他成员对代码的合入而变化，故       每次对svn操作时，请先对其进行更新，获得其他同事更改后的最新文件。（当代码很多，而自己只更改一小       部分内容时，可以只update相应的文件，缩短更新事件）切记：使用代码前、合入SVN前，均需对相应文件进       行更新。具体图示如下所示。
+从SVN检出代码后，本地的代码为SVN服务器上代码的副本，并不会随着其他成员对代码的合入而变化，故       每次对svn操作时，请先对其进行更新，获得其他同事更改后的最新文件。（当代码很多，而自己只更改一小       部分内容时，可以只update相应的文件，缩短更新事件）切记：使用代码前、合入SVN前，均需对相应文件进       行更新。具体图示如下所示。asdfasdfasdfjkasdjf
