@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.box {
+			width: 100%;
+		}
+		.item {
+			position: relative;
+			float: left;
+			width: 50%;
+			background: red;
+			overflow: hidden;
+		}
+		.item:after {
+			content: '';
+			display: block;
+			margin-top: 50%;
+		}
+		.item img {
+			position: absolute;
+			top: 0;
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<div class="item">
+			<img src="" alt="">
+			<div>sadfasd</div>
+		</div>
+		<div class="item">
+			<img src="" alt="">
+			<div>asdf</div>
+		</div>
+	</div>
+</body>
+</html>
