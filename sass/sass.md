@@ -17,6 +17,24 @@ sass变量必须是$开头,后面紧跟变量名,变量名和变量值之间需�
     $baseline: 3;
     $baseline: 4 !default;
 
+#### 选择器
+
+    > 选择紧跟在父元素后面的第一个子元素 section > p
+    + 选择同级紧跟在当前元素的第一个元素 section + p
+    ~ 选择子集下的所有元素  section ~ p
+
+#### 属性嵌套
+
+    在sass中，除了CSS选择器，属性也可以进行嵌套。尽管编写属性涉及的重复不像编写选择器那么糟糕，但是要反复写border-styleborder-widthborder-color以及border-*等也是非常烦人的。在sass中，你只需敲写一遍border：
+    `nav {
+     border: {
+     style: solid;
+     width: 1px;
+     color: #ccc;
+     }
+    }`
+
+
 ##### 特殊变量
 
 一般我们定义的变量都为属性值，可直接使用，但是如果变量作为属性或在某些特殊情况下等则必须要以#{$variables}形式使用。
