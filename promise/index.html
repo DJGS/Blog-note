@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+</body>
+<script type="text/javascript">
+
+	//定义一个defer对象
+	var defer = {
+		then: function(func){
+			this.queue.push(func);
+			return defer;
+		},
+		resolve: function(data){
+			var func=this.queue.shift();
+			func(data);
+		},
+		queue: []
+	};
+
+	function demo(data){
+		console.log('start');
+		setTimeout(function(){
+			defer.resolve(data);
+		},1000);
+		return defer;
+	}
+
+	function _continue(data){
+		console.log('序号', data);
+		setTimeout(function(){
+			defer.resolve(++data);
+		},1000);
+		return defer;
+	}
+
+	demo(1)
+		.then(function(data){
+			return _continue(data);
+		})
+		.then(function(data){
+			return _continue(data);
+		})
+		.then(function(data){
+			console.log(data);
+		})
+</script>
+</html>
